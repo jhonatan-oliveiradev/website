@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--white: #fff; //Text
+	--gray-100: #afafaf; //Divisor -
+	--gray-200: #525252; //Divisor
+	--gray-800: #15171b; //Body
+	--gray-900: #111113; //Header
+	--blue-900: #1fa4e5; //CTA
+	--yellow-500: #ffbe16; //Warning
+}
+
+@media (max-width: 1080px) {
+	html {
+		font-size: 93.75%; //15px
+	}
+}
+
+@media (max-width: 720px) {
+	html {
+		font-size: 87.5%; //14px
+	}
+}
+
+body {
+	background: var(--gray-900);
+	color: var(--white);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+	font: 400 1rem "Poppins", sans-serif;
+}
