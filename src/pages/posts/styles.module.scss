@@ -47,3 +47,29 @@
 		}
 	}
 }
+
+.buttonNavigate {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2rem;
+
+	div {
+		display: flex;
+		flex-direction: row;
+
+		button {
+			display: flex;
+			margin: 0 5px;
+			padding: 0.5rem;
+			border: none;
+			border-radius: 4px;
+			background-color: var(--blue-900);
+
+			svg {
+				padding: 0 3px;
+			}
+		}
+	}
+}

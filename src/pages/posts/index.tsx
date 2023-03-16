@@ -2,6 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import {
+	FiChevronsLeft,
+	FiChevronLeft,
+	FiChevronsRight,
+	FiChevronRight,
+} from "react-icons/fi";
 import thumbImage from "../../../public/images/thumb.png";
 
 const Posts = () => {
@@ -29,6 +35,26 @@ const Posts = () => {
 							bola!
 						</p>
 					</Link>
+
+					<div className={styles.buttonNavigate}>
+						<div>
+							<button>
+								<FiChevronsLeft size={25} color="#fff" />
+							</button>
+							<button>
+								<FiChevronLeft size={25} color="#fff" />
+							</button>
+						</div>
+
+						<div>
+							<button>
+								<FiChevronRight size={25} color="#fff" />
+							</button>
+							<button>
+								<FiChevronsRight size={25} color="#fff" />
+							</button>
+						</div>
+					</div>
 				</div>
 			</main>
 		</>
