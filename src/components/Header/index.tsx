@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./styles.module.scss";
-import logo from "../../../public/images/logo.svg";
 import { useRouter } from "next/router";
+
+import logo from "../../../public/images/logo.svg";
+import styles from "./styles.module.scss";
 
 const Header = () => {
 	const router = useRouter();
