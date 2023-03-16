@@ -39,3 +39,16 @@ select,
 button {
 	font: 400 1rem "Poppins", sans-serif;
 }
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&.active {
+		color: var(--yellow-500);
+	}
+}
