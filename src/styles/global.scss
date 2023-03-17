@@ -39,6 +39,11 @@
 	background: var(--blue-900);
 }
 
+::-webkit-scrollbar-thumb:hover {
+	background: #1fa4f9;
+	opacity: 0.8;
+}
+
 body {
 	background: var(--gray-900);
 	color: var(--white);
