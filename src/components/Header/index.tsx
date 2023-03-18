@@ -24,7 +24,7 @@ const Header = () => {
 					<Link href="/posts">
 						<p className={pathname === "/posts" ? "active" : ""}>Conteúdos</p>
 					</Link>
-					<Link href="/sobre">
+					<Link href="/about">
 						<p className={pathname === "/about" ? "active" : ""}>Quem somos?</p>
 					</Link>
 				</nav>
