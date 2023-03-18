@@ -3,6 +3,7 @@ import Image from "next/image";
 import { GetServerSideProps } from "next";
 import { getPrismicClient } from "../../services/prismic";
 import { RichText } from "prismic-dom";
+import { ParsedUrlQuery } from "querystring";
 
 import styles from "./post.module.scss";
 
@@ -50,11 +51,15 @@ const Post = ({ post }: PostProps) => {
 
 export default Post;
 
+interface Params extends ParsedUrlQuery {
+	slug: string;
+}
+
 export const getServerSideProps: GetServerSideProps = async ({
 	req,
 	params,
 }) => {
-	const { slug } = params;
+	const { slug } = params as Params;
 	const prismic = getPrismicClient(req);
 
 	const response = await prismic.getByUID("post", String(slug), {});
